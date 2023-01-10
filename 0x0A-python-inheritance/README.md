@@ -1,6 +1,6 @@
-#0x0A. Python - Inheritance
+# 0x0A. Python - Inheritance
 
-##General
+## General
 
 + Why Python programming is awesome
 + What is a superclass, baseclass or parentclass
@@ -13,12 +13,12 @@
 + How to override a method or attribute inherited from the base class
 + Which attributes or methods are available by heritage to subclasses
 + What is the purpose of inheritance
-+ What are, when and how to use 'isinstance', 'issubclass','type and super built-in functions'
++ What are, when and how to use **isinstance**, **issubclass**,**type and super built-in functions**
 
 
-#Requirements
+# Requirements
 
-##Python Scripts
+## Python Scripts
 
 + Allowed editors: vi, vim, emacs
 + All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
