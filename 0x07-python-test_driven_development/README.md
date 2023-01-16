@@ -1,9 +1,10 @@
-0x07. Python - Test-driven development
-
-Requirements
+# 0x07. Python - Test-driven development
 
 
-Python Scripts
+# Requirements
+
+
+## Python Scripts
 1. Allowed editors: vi, vim, emacs
 2. All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 3. All your files should end with a new line
@@ -14,15 +15,15 @@ Python Scripts
 8. The length of your files will be tested using wc
 
 
-Python Test Cases
+## Python Test Cases
 
 1. Allowed editors: vi, vim, emacs
 2. All your files should end with a new line
 3. All your test files should be inside a folder tests
 4. All your test files should be text files (extension: .txt)
 5. All your tests should be executed by using this command: python3 -m doctest ./tests/*
-6. All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
-7. All your functions should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)')
+6. All your modules should have a documentation `(python3 -c 'print(__import__("my_module").__doc__)')`
+7. All your functions should have a documentation `(python3 -c 'print(__import__("my_module").my_function.__doc__)')`
 8. A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 9. We strongly encourage you to work together on test cases, so that you don’t miss any edge case – The Checker is checking for tests!
 
