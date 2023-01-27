@@ -1,31 +1,45 @@
 #!/usr/bin/python3
+"""This module has the functions that divides a matrix"""
 
-"""
-    Matrix division module
-"""
 
 def matrix_divided(matrix, div):
-    """ Divides each value of a matrix by a number.
-    Args:
-        matrix: (:obj:`list` of :obj: `list`): The matrix to divide
-        div: The divisor.
-    Returns:
-        (:obj:`list` of :obj: `list` of number): A divided matrix.
+    """divide each element of the matrix
+    Parameters:
+    - matrix: matrix to divide
+    - div: number to divide matrix with
+    Return:
+    - result of division
     Raises:
-        TypeError: If `matrix` is not a ``matrix``.
-                   If each row does not have the same time.
-                   If `div` is not a number.
-        ZeroDivisionError: If `div` is 0
+    - TypeError: if invalid matrix or number to divide with was passed
+    - ZeroDivisionError: div is equal to zero
     """
-    if len(matrxi):
-        n = len(matrix[0])
-        for row in matrix:
-            if n != len(row):
-                raise TypeError(
-                        "Each row of the matrix must have the same size")
-            for i in row:
-                if type(i) not in [int, float]:
-                    raise TypeError("matrix must be a matrix\
-                            (list of lists) of integers/floats")
-    res = [[round(i/div, 2) for i in row] for row in matrix]
-    return res
+    # check if matrix is a matrix
+    MatrixError = TypeError(
+            "matrix must be a matrix (list of lists) of integers/floats"
+            )
+    if not isinstance(matrix, list) or not isinstance(matrix[0], list):
+        raise(MatrixError)
+    for row in matrix:
+        if not all(isinstance(element, (int, float)) for element in row):
+            raise(MatrixError)
+
+    # check if the rows are of the same length
+    length = len(matrix[0])
+    if length == 0:
+        return matrix  # empty matrix
+    elif not all(len(row) == length for row in matrix):
+        raise(TypeError("Each row of the matrix must have the same size"))
+
+    # check if div is a number and not equal to 0
+    if not isinstance(div, (int, float)):
+        raise(TypeError("div must be a number"))
+    elif div == 0:
+        raise(ZeroDivisionError("division by zero"))
+
+    result = []
+    for row in matrix:
+        temp = [num / div for num in row]
+        temp = [round(num, 2) for num in temp]
+        result.append(temp)
+
+    return result
