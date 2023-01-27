@@ -1,73 +1,35 @@
-The ``0-add_integer`` module
-======================
-
-Using ``add_integer``
--------------------
-
-This is an example text file in reStructuredText format.  First import
-``add_integer`` from the ``0-add_integer`` module:
-
--------------------
-
->>> add_integer = __import__('0-add_integer').add_integer
-
-
-# a = int, b = int
->>> add_integer(5, 2)
-7
-
-# a = negative int, b =  int
->>> add_integer(-5, 2)
--3
-
-# a = 0, b = int
->>> add_integer(0, 2)
-2
-
-# a = float, b = int
->>> add_integer(1.2, 2)
-3
-
-# a = int, b = float
->>> add_integer(1, 2.6)
-3
-
-# a = float, b = float
->>> add_integer(5.9, 5.9)
-10
-
-# a = None, b = int
->>> add_integer(None, 89)
+>>> add_integer = __import__("0-add_integer").add_integer
+>>> add_integer('j')
 Traceback (most recent call last):
-...
 TypeError: a must be an integer
-
-# a = int, b = None
->>> add_integer(89, None)
+>>> add_integer(5, 'j')
 Traceback (most recent call last):
-...
 TypeError: b must be an integer
-
-# a = None
->>> add_integer(None)
+>>> add_integer(2, 3)
+5
+>>> add_integer(2, 3.5)
+5
+>>> add_integer(3.5, 2.5)
+5
+>>> add_integer(3.4, 2)
+5
+>>> add_integer(float('inf')) 
 Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
-# a = str
->>> add_integer('puppy')
+  File "<stdin>", line 1, in <module>
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(9, float('inf')) 
 Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
-# a = int, b = str
->>> add_integer(5, 'doggo')
+OverflowError: cannot convert float infinity to integer
+>>> add_integer(float('nan')) 
 Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
-# a = str, b = str
->>> add_integer('brekkie', 'dindin')
+ValueError: cannot convert float NaN to integer
+>>> add_integer(9, float('nan')) 
 Traceback (most recent call last):
-...
-TypeError: a must be an integer
+ValueError: cannot convert float NaN to integer
+>>> add_integer() 
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+>>> add_integer(9, 10, 11) 
+Traceback (most recent call last):
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+>>>  
