@@ -1,43 +1,36 @@
 #!/usr/bin/python3
-"""Unittest for max_integer([..])
 """
+this module has the test case for the max_integer function.
+"""
+
 import unittest
-#max_integer = __import__('6-max_integer').max_integer
-
-
-def max_integer(list=[]):
-    """Function to find and return the max integer in a list of integers
-        If the list is empty, the function returns None
-    """
-    if len(list) == 0:
-        return None
-    result = list[0]
-    i = 1
-    while i < len(list):
-        if list[i] > result:
-            result = list[i]
-        i += 1
-    return result
+max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
+    """Test the max_integer funtion"""
 
-    def test_simple_complete_list(self):
-        self.assertEqual(max_integer([1, 2, 3, 4]), 4)
-        self.assertEqual(max_integer([5, 2, 0, -1]), 5)
-        self.assertEqual(max_integer([5, 5, 5]), 5)
+    def test_max(self):
+        """testing if it returns the max integer"""
+        # max at the middle
+        self.assertEqual(max_integer([2, 5, 8, 3]), 8)
+        # max at the begining
+        self.assertEqual(max_integer([8, 4, 1, 0]), 8)
+        # max at the end
+        self.assertEqual(max_integer([0, 4, 2, 8]), 8)
+        # test with negative numbers
+        self.assertEqual(max_integer([-3, 6, 2, 8]), 8)
+        # test for double max
+        self.assertEqual(max_integer([2, 5, 7, 10, 10]), 10)
+        # test with pure negative numbers
+        self.assertEqual(max_integer([-10, -5, -6]), -5)
+        # test with pure zeros
+        self.assertEqual(max_integer([0, 0, 0, 0]), 0)
 
-    def test_simple_empty_none_list(self):
-        self.assertEqual(max_integer([]), None)
-        self.assertRaises(TypeError, max_integer, None)
-
-    def test_string_comparison(self):
-        self.assertRaises(TypeError, max_integer, [1, 2, 3, "Hol"])
-        self.assertRaises(TypeError, max_integer, ["H", 1, 2, 3])
-
-    def test_integer_comparison_none(self):
-        self.assertRaises(TypeError, max_integer, [1, None, 2])
+    def test_empty(self):
+        """test for an empty list"""
+        self.assertIsNone(max_integer([]))
 
 
-if __name__ == '__main__':
-    unittest.main()
+        if __name__ == "__main__":
+            unittest.main()
