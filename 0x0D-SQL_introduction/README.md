@@ -30,7 +30,7 @@
 
 ## More Info
 
-###Comments for your SQL file:
+### Comments for your SQL file:
 ```ruby
 $ cat my_script.sql
 -- 3 first students in the Batch ID=3
