@@ -1,3 +1,36 @@
+# 0x12. JavaScript - Warm up
+
+![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png)
+> Introduction to JavaScript
+
+![just-work-js](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/303/Javascript-535.png.jpeg)
+## Javascript
+JavaScript, a high level single threaded garbage collected intrepreted or just in time compliled  prototyped based multiparadigm  weakly dynamic typed programming language with a non blocking event loop, famous for building websites. It was created by Brendan Eich in 1995 in just one week to add scripting functionalities to the netscape browser.
+
+## Background context
+JavaScript is used for many things. Here, you will use JavaScript for 2 reasons:
+
+- Scripting (same as we did with Python)
+- Web front-end
+
+For the moment, and for learning all basic concepts of this language, we will do some scripting. After, we will make our AirBnB project dynamic by using Javascript and JQuery.
+
+## Resources 
+1. [Writting Javascript code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+2. [Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+3. [Datatypes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+4. [Operators](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+5. [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+6. [Controlling program flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+7. [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+8. [Objects and arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+9. [Intrinsic objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+10. [Module patterns](http://darrenderidder.github.io/talks/ModulePatterns/#/)
+11. [var, let, const](https://www.youtube.com/watch?v=sjyJBL5fkp8)
+12. [Javascript tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI)
+13. [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
+14. [100 secods of JS](https://www.youtube.com/watch?v=DHjqpvDnNGE&t=20s
+
 # Learning Objectives
 + At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -37,8 +70,8 @@ $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 ```ruby
-`Install semi-standard`
-`Documentation`
+Install semi-standard
+Documentation
 
 $ sudo npm install semistandard --global
 ```
