@@ -29,7 +29,7 @@ For the moment, and for learning all basic concepts of this language, we will do
 11. [var, let, const](https://www.youtube.com/watch?v=sjyJBL5fkp8)
 12. [Javascript tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI)
 13. [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
-14. [100 secods of JS](https://www.youtube.com/watch?v=DHjqpvDnNGE&t=20s
+14. [100 secods of JS](https://www.youtube.com/watch?v=DHjqpvDnNGE&t=20s)
 
 # Learning Objectives
 + At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
@@ -71,7 +71,7 @@ $ sudo apt-get install -y nodejs
 ```
 ```ruby
 Install semi-standard
-Documentation
+[Documentation](https://github.com/standard/semistandard)
 
 $ sudo npm install semistandard --global
 ```
