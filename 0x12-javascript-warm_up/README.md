@@ -64,14 +64,14 @@ For the moment, and for learning all basic concepts of this language, we will do
 + The length of your files will be tested using wc
 
 ### More Info
-```ruby
-`Install Node 14`
+
+## Install Node 14
+```
 $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
-```ruby
-Install semi-standard
-[Documentation](https://github.com/standard/semistandard)
 
+## Install semi-standard
+[Documentation](https://github.com/standard/semistandard)
 $ sudo npm install semistandard --global
 ```
