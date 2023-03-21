@@ -41,7 +41,7 @@ Indeed, all of them have the same type of syntax, but not always. Please read tu
 
 
 # Resources
-Read or watch:
++ Read or watch:
 
 + [Object-relational mappers](https://www.fullstackpython.com/object-relational-mappers-orms.html)
 + [mysqlclient/MySQLdb documentation](https://mysqlclient.readthedocs.io/)
@@ -53,11 +53,10 @@ Read or watch:
 + [Flask SQLAlchemy](https://youtube.com/playlist?list=PLXmMXHVSvS-BlLA5beNJojJLlpE0PJgCW)
 + [10 common stumbling blocks for SQLAlchemy newbies](http://alextechrants.blogspot.com/2013/11/10-common-stumbling-blocks-for.html)
 + [Python SQLAlchemy Cheatsheet](https://www.pythonsheets.com/notes/python-sqlalchemy.html)
-+ [SQLAlchemy ORM Tutorial for Python Developer] (https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/) (Warning: This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL)
++ [SQLAlchemy ORM Tutorial for Python Developer](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/) 
+(Warning: This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL)
 + [SQLAlchemy Tutorial](https://overiq.com/sqlalchemy-101/)
 
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 ## General
 + Why Python programming is awesome
