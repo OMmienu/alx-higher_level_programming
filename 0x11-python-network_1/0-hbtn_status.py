@@ -1,21 +1,13 @@
 #!/usr/bin/python3
-"""
-Script that fetches https://intranet.hbtn.io/status
-"""
-import urllib.request
+""" a python script to open a url """
 
-
-def main():
-    """
-    Funtion to print a response of a specific url
-    """
-    url = 'https://intranet.hbtn.io/status'
-    with urllib.request.urlopen(url) as response:
-        html = response.read()
-        print('Body response:')
-        print('\t- type: {}'.format(type(html)))
-        print('\t- content: {}'.format(html))
-        print('\t- utf8 content: {}'.format(html.decode('utf8')))
+from urllib.request import urlopen
 
 if __name__ == "__main__":
-    main()
+    with urlopen("https://alx-intranet.hbtn.io/status") as f:
+        body = f.read()
+        print('Body response:')
+        print(f'\t- type: {type(body)}')
+        print(f'\t- content: {body}')
+        print(f'\t - utf8 content: {body.decode("utf-8")}')
+
