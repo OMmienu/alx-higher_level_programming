@@ -1,12 +1,15 @@
-#!/usr/bin/python3
-""" a python script to open a url """
+#!#/usr/bin/python3
 
-from urllib.request import urlopen
+#!/usr/bin/python3
+"""0x11. Python - Network #1, task 0. What's my status? #0
+"""
 
 if __name__ == "__main__":
-    with urlopen("https://alx-intranet.hbtn.io/status") as f:
-        body = f.read()
-        print('Body response:')
-        print(f'\t- type: {type(body)}')
-        print(f'\t- content: {body}')
-        print(f'\t - utf8 content: {body.decode("utf-8")}')
+    from urllib import request
+
+    with request.urlopen('https://intranet.hbtn.io/status') as response:
+        html = response.read()
+    print('Body response:')
+    print('\t- type: {}'.format(type(html)))
+    print('\t- content: {}'.format(html))
+    print('\t- utf8 content: {}'.format(html.decode('utf-8')))
