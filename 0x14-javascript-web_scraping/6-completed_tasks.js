@@ -3,7 +3,7 @@
 // Write a script that computes the number of tasks completed by user id
 
 const request = require('request');
-const url =  process.argv[2];
+const url = process.argv[2];
 request(url, (err, res, body) => {
   if (err) console.error(err);
   const tasks = JSON.parse(body);
